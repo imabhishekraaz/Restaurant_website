@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-font: "Lato", sans-serif;
+    --primary-color: #3D45AA;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+#home {
+    width: 100vw;
+    height: 100vh;
+    padding: 1.3rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/img/food.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo .logo-head {
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: 1;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: var(--primary-font);
+    color: white;
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    transform: translateY(-5px);
+}
+
+.headlines {
+    width: 60%;
+    margin: 11rem 0rem 0rem 5rem;
+
+}
+
+.headline h1 {
+    font-family: var(--primary-font);
+    font-size: 2.4rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.btns {
+    display: flex;
+    gap: 40px;
+}
+
+.btns button {
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--primary-font);
+    color: white;
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btns button:hover {
+    transform: translateY(-5px);
+}
+
+.row {
+    margin: 60px 0px;
+}
+
+.heading h1 {
+    font-family: var(--primary-font);
+    font-size: 2.4rem;
+    color: var(--primary-color);
+    margin: 0px 0px 30px 0px;
+    text-align: center;
+}
+
+.heading hr {
+    width: 10vw;
+    border: 2px solid var(--primary-color);
+    margin: auto;
+    border-radius: 5px;
+}
+
+.paragraph p {
+    margin: 30px 100px 50px 100px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--primary-font);
+
+}
+
+#service {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.heading {
+    margin: auto;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.heading ion-icon {
+    color: var(--primary-color);
+    width: 70px;
+    height: 70px;
+
+}
+
+.heading p {
+    font-size: 1rem;
+    font-family: var(--primary-font);
+}
+
+.places {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+}
+
+.heading {
+    margin: auto;
+    padding: 0px 20px;
+    /* text-align: center; */
+}
+
+.places .heading {
+    border-radius: 20px;
+    background-color: #cccff7;
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 5px #000;
+}
+
+.heading ion-icon {
+    color: var(--primary-color);
+    width: 70px;
+    height: 70px;
+
+}
+
+.heading p {
+    font-size: 1rem;
+    font-family: var(--primary-font);
+}
+
+.heading img {
+    width: 20vw;
+    margin: 40px 0px 10px 0px;
+}
+
+.li {
+    width: auto;
+    list-style: disc;
+    text-align: left;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.li #tw {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.li li ion-icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+
+}
+
+.heading blockquote {
+    text-align: left;
+    margin: 10px;
+    font-family: var(--primary-font);
+}
+
+.review-person-image {
+    display: block;
+    float: right;
+    font-weight: bold;
+}
+
+.review-person-image img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+.reviews .heading {
+    margin: 20px;
+    border-radius: 20px;
+    padding: 30px 10px 20px 10px;
+    background-color: #cccff7;
+    box-shadow: 5px 5px 5px #000;
+}
+
+.price-list {
+    display: grid;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.price-list .heading {
+    padding: 30px 50px 100px 50px;
+    background-color: #cccff7;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #000;
+}
+
+.heading h2 {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.heading h1 span {
+    font-size: 0.8rem;
+}
+
+.li li {
+    list-style: none;
+    display: flex;
+}
+
+.specification {
+    display: flex;
+    margin-top: 30px;
+    height: 100px;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.specification a {
+    text-align: center;
+    /* display: block; */
+    margin-top: 500px;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 15px 30px;
+    color: white;
+    border-radius: 10px;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 60%;
+    /* Set fixed width */
+    padding: 20px;
+    background: #cccff7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 5px #000;
+}
+
+.form .col {
+    width: 70%;
+    margin-top: 50px;
+}
+
+.col label {
+    font-size: 1.2rem;
+    margin-right: 50px;
+}
+
+.col input {
+    width: 60%;
+    padding: 10px;
+}
+
+.col select {
+    width: 30%;
+    padding: 10px;
+}
+
+.button button {
+    margin-top: 40px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.button button:active {
+    transform: scale(0.9);
+}
+
+@media (max-width: 480px) {
+    #home {
+        width: 100%;
+        height: 350px;
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./images/img/hs.webp);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .logo-head h2{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .logo{
+        display: block;
+    }
+    .nav-links {
+        display: none;
+    }
+    .headlines {
+        width: 80%;
+        margin: 5rem 0rem 0rem 2rem;
+    }
+    .headline h1 {
+        width: 100%;
+        color: white;
+        margin: 0px;
+        font-family: var(--primary-font);
+        font-size: 1.4rem;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .btns button {
+        width: 100%;
+        /* padding: 13px; */
+        border: none;
+        border-radius: 10px;
+        font-family: var(--primary-font);
+        color: white;
+        background-color: var(--primary-color);
+        font-size: 0.7rem;
+        cursor: pointer;
+    
+}
+.heading h1{
+    font-size: 1.5rem;
+}
+.paragraph p {
+    width: 80%;
+    margin: 30px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--primary-font);
+
+}
+
+#service {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.places {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.places .heading {
+    width: 80%;
+    border-radius: 20px;
+    background-color: #cccff7;
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 5px #000;
+}
+.heading img {
+    width: 90%;
+}
+.reviews {
+    display: flex;
+    flex-direction: column;
+}
+.review-person-image img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 20px;
+
+}
+.price-list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.price-list .heading{
+    width: 90%;
+    padding-bottom: 120px;
+}
+.form{
+    width: 80%;
+    margin-top: 30px;
+}
+.form .col {
+    width: 100%;
+    margin-top: 20px;
+}
+.col textarea{
+    width: 100%;
+}
+
+
+}
