@@ -337,6 +337,52 @@
 .button button:active {
     transform: scale(0.9);
 }
+.footer-section{
+    background-color: #cccff7; 
+    margin-top: 80px;   
+    padding: 30px 30px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.footer-link li{
+    text-decoration: none;
+}
+.footer{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.imp h4{
+    font-size: 1.5rem;
+}
+.social h4{
+    font-size: 1.5rem;
+}
+
+.footer ul li a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+}
+.social-link {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.social-link li{
+    list-style: none;
+}
+.social-link li ion-icon{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.footer-para{
+    text-align: center;
+}
 
 @media (max-width: 480px) {
     #home {
@@ -445,6 +491,12 @@
 .col textarea{
     width: 100%;
 }
-
+.footer-container{
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    margin: 20px;
+}
 
 }
