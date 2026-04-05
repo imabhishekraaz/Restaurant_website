@@ -23,7 +23,6 @@ It includes essential sections like homepage, menu, about, and contact, making i
 
 * HTML5
 * CSS3
-* JavaScript
 
 ---
 
